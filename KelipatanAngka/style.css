@@ -1,0 +1,32 @@
+h1, h2, p, table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+p {
+    font-weight: bold;
+}
+
+td {
+    width: 700px;
+    text-align: center;
+    background-color: aqua;
+}
+
+.kelipatan{
+    background-color: rgb(238, 0, 255);
+}
+
+.angka{
+    background-color: aliceblue;
+}
+
+.header{
+    background-color: rgb(167, 167, 167);
+}
+
+button{
+    background-color: rgb(167, 167, 167);
+}

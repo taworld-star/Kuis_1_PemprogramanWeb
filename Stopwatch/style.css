@@ -1,0 +1,58 @@
+body{
+    width: 700px;
+    border: 1px solid;
+    height: 400px;
+    border: 1px solid;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.jam{
+    color: green;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.jam2{
+    font-size: 40px;
+}
+
+.menit{
+    color: rgba(255, 255, 0, 0.82);
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.menit2{
+    font-size: 40px;
+}
+
+.detik{
+    color: red;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.mulai{
+    background-color: green;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+}
+.berhenti{
+    background-color: yellow;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.reset{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 3px;
+}
