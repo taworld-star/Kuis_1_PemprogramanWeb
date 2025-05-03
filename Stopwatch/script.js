@@ -43,7 +43,7 @@ function startTimer() {
             }
             
             updateDisplay();
-        }, 1000);
+        }, 100);
         
         // Menonaktifkan tombol mulai saat timer berjalan
         mulaiButton.disabled = true;
