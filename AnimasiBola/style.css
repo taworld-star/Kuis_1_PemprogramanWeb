@@ -1,29 +1,32 @@
 body{
+    height: 100vw;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 13%;
 }
 
-.ball{
+#bola{
+    position: absolute;
     width: 50px;
     height: 50px;
     background-color: rgb(255, 255, 255);
     border-radius: 50px;
-    position: relative;
-    margin-top: 25%;
-    animation: ballAnimation 10s ease 3 alternate forwards running;
+    /* animation: ballAnimation 10s ease 3 alternate forwards running; */
 }
 
-.container_animation{
+#container{
+    position: relative;
     width: 700px;
     height: 400px;
     background-color: green;
-    animation: background_animation 10s ease 3 alternate forwards running;
-    border-radius: 10px
+    border-radius: 10px;
+    margin: 20px auto;
+    overflow: hidden;
+    
 }
 
-@keyframes ballAnimation {
+/* @keyframes ballAnimation {
     0% {opacity: 0;left: 0px; top: 0px;}
     20%{opacity: 1;left: 0px; top: 0px;}
     40%{opacity: 1;left: 650px; top: 0px;}
@@ -39,4 +42,4 @@ body{
     60%{background-color: rgb(255, 0, 149);}
     80%{background-color: rgb(94, 255, 0);}
     100%{background-color: green;}
-}
+} */
