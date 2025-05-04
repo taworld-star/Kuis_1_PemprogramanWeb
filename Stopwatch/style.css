@@ -9,18 +9,10 @@ body{
     align-items: center;
     display: flex;
 }
-.jam{
-    color: green;
-    font-weight: bold;
-    font-size: 40px;
-}
 
-.jam2{
-    font-size: 40px;
-}
 
 .menit{
-    color: rgba(255, 255, 0, 0.82);
+    color: rgb(0, 160, 13);
     font-weight: bold;
     font-size: 40px;
 }

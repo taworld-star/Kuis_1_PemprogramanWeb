@@ -1,5 +1,4 @@
 // Mengambil semua elemen yang diperlukan dari DOM
-const jamElement = document.querySelector('.jam');
 const menitElement = document.querySelector('.menit');
 const detikElement = document.querySelector('.detik');
 const mulaiButton = document.querySelector('.mulai');
@@ -20,7 +19,6 @@ function formatTime(time) {
 
 // Fungsi untuk memperbarui tampilan waktu
 function updateDisplay() {
-    jamElement.textContent = formatTime(hours);
     menitElement.textContent = formatTime(minutes);
     detikElement.textContent = formatTime(seconds);
 }
@@ -64,7 +62,6 @@ function stopTimer() {
 // Fungsi untuk mereset timer
 function resetTimer() {
     stopTimer();
-    hours = 0;
     minutes = 0;
     seconds = 0;
     updateDisplay();
