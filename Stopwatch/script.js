@@ -7,7 +7,6 @@ const resetButton = document.querySelector('.reset');
 
 // Variabel untuk menyimpan interval dan waktu
 let interval;
-let hours = 0;
 let minutes = 0;
 let seconds = 0;
 let isRunning = false;
@@ -30,7 +29,7 @@ function startTimer() {
         interval = setInterval(() => {
             seconds++;
             
-            if (seconds === 60) {
+            if (seconds === 100) {
                 seconds = 0;
                 minutes++;
                 
