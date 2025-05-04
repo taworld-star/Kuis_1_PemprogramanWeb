@@ -31,12 +31,7 @@ function startTimer() {
             
             if (seconds === 100) {
                 seconds = 0;
-                minutes++;
-                
-                if (minutes === 60) {
-                    minutes = 0;
-                    hours++;
-                }
+                minutes++;  
             }
             
             updateDisplay();
