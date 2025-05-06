@@ -1,11 +1,11 @@
 body{
-    width: 700px;
-    height: 400px;
+    /* width: 700px;
+    height: 400px; */
     margin: auto;
     justify-content: center;
     align-items: center;
     display: flex;
-    padding: 100px;
+    padding: 80px;
 }
 
 #bola{
