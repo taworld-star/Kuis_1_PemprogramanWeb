@@ -13,7 +13,12 @@ let isRunning = false;
 
 // Fungsi untuk memformat angka menjadi dua digit (menambahkan 0 di depan jika perlu)
 function formatTimeMinutes(time) {
-    return time < 10 ? `00${time}` : time;
+    // return time < 10 ? `00${time}` : time;
+    if (time < 10) {
+        return `00${time}`;
+    }else if(time >= 10 && time < 100){
+        return `0${time}`;
+    }
 }
 function formatTimeSeconds(time) {
     return time < 10 ? `0${time}` : time;
@@ -32,13 +37,13 @@ function startTimer() {
         interval = setInterval(() => {
             seconds++;
             
-            if (seconds === 100) {
+            if (seconds >= 100) {
                 seconds = 0;
                 minutes++;  
             }
             
             updateDisplay();
-        }, 10);
+        }, 30);
         
         // Menonaktifkan tombol mulai saat timer berjalan
         mulaiButton.disabled = true;
