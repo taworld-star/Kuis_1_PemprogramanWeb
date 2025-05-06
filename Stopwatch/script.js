@@ -12,14 +12,17 @@ let seconds = 0;
 let isRunning = false;
 
 // Fungsi untuk memformat angka menjadi dua digit (menambahkan 0 di depan jika perlu)
-function formatTime(time) {
+function formatTimeMinutes(time) {
+    return time < 10 ? `00${time}` : time;
+}
+function formatTimeSeconds(time) {
     return time < 10 ? `0${time}` : time;
 }
 
 // Fungsi untuk memperbarui tampilan waktu
 function updateDisplay() {
-    menitElement.textContent = formatTime(minutes);
-    detikElement.textContent = formatTime(seconds);
+    menitElement.textContent = formatTimeMinutes(minutes);
+    detikElement.textContent = formatTimeSeconds(seconds);
 }
 
 // Fungsi untuk menjalankan timer
