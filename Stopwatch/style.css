@@ -8,7 +8,8 @@ body{
     justify-content: center;
     align-items: center;
     display: flex;
-    padding: 80px;
+    padding: 12%;
+    overflow: hidden;
 }
 
 
